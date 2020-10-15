@@ -1,0 +1,116 @@
+html,body {
+  box-sizing: border-box;
+}
+.navbar-brand {
+  color: greenyellow !important;
+  font-size: 150% !important;
+}
+/*.jumbotron {
+  background-image: url('../images/team.jpg');
+  background-repeat: no-repeat cover;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+.jumbotron > h1 {
+  color: whitesmoke;
+  font-size: 500%;
+}*/
+
+.anime {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease;
+  background: rgb(203,238,106);
+  background: -moz-linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
+  background: linear-gradient(90deg, rgba(203,238,106,1) 23%, rgba(85,232,197,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbee6a",endColorstr="#55e8c5",GradientType=1);
+  overflow: hidden;
+}
+.card-subtitle {
+  color: green;
+}
+.card:hover .overlay {
+  opacity: 0.8;
+}
+.card:hover .icons {
+  transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
+.card .icon {
+  color: white;
+  font-size: 4vw;
+  opacity: 1;
+  margin: 7%;
+}
+.icons {
+  position: absolute;
+  padding-left: 0px;
+  transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  text-align: center;
+  list-style-type: none;
+  transition: transform 0.7s ease-out 0.5;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+header{
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  width: 100vw;
+  border-bottom:100px solid grey;
+  border-width:0.1vh ;
+  padding-bottom: 0%;
+  padding-top: 1%;
+  z-index: 1 ;
+ 
+}
+.navbar {
+  width: 100%;
+}
+.nav-links{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link > a{
+  line-height: 3rem;
+  color:grey;
+  padding: 0 .8rem;
+  letter-spacing: 1px;
+  font-size: .95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .5s;
+}
+.nav-link:hover > a{
+  transform: scale(1.1);
+  text-decoration: none;
+  color:  #45a049;
+}
+@media all and (min-width: 767px) {
+  .card .icon{ 
+    font-size: 2vw; 
+  }
+}
